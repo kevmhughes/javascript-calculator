@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './display.css';
+import './display-two.css';
 
-export default class Display extends Component {
+export default class DisplayTwo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,8 +10,8 @@ export default class Display extends Component {
 
   render() {
     return (
-        <div id='display'>
-            This is my display
+        <div id='display-two'>
+            This is my display 2
         </div>
     );
   }

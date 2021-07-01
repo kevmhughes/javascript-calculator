@@ -1,0 +1,36 @@
+button {
+    width: 80px;
+    height: 65px;
+    background-color: grey;
+    color: white;
+}
+
+#keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#clear {
+    background-color: #b94a48;
+}
+
+#equals {
+    background-color: #2f6fad;
+}
+
+#divide {
+    background-color: darkgray;
+}
+
+#multiply {
+    background-color: darkgray;
+}
+
+#add {
+    background-color: darkgray;
+}
+
+#subtract {
+    background-color: darkgray;
+}
