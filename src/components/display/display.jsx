@@ -11,7 +11,7 @@ export default class Display extends Component {
   render() {
     return (
         <div id='display'>
-            This is my display
+            {this.props.prevValue}
         </div>
     );
   }

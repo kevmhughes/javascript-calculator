@@ -8,16 +8,39 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentValue: '0',
-      prevValue: '0',
+      currentVal: '0',
+      prevVal: '0',
     }
+    this.initialize = this.initialize.bind(this);
+    this.handleNumbers = this.handleNumbers.bind(this);
   }
+
+  handleNumbers(e) {
+    const value = e.target.value;
+    this.setState({
+      currentVal: value,
+      prevVal: value,
+    })
+  }
+
+  initialize() {
+    this.setState({
+      currentVal: '0',
+      prevVal: '0',
+    });
+  }
+
   render() {
     return (
       <div id="calculator" >
-        < Display />
-        < DisplayTwo />
-        < Buttons />
+        < Display 
+          prevValue={this.state.prevVal}/>
+        < DisplayTwo 
+          currentValue={this.state.currentVal}/>
+        < Buttons 
+          initialize={this.initialize}
+          numbers={this.handleNumbers}
+        />
       </div>
     );
   }

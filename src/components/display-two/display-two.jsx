@@ -11,7 +11,7 @@ export default class DisplayTwo extends Component {
   render() {
     return (
         <div id='display-two'>
-            This is my display 2
+            {this.props.currentValue}
         </div>
     );
   }

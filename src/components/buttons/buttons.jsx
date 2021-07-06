@@ -11,7 +11,10 @@ export default class Buttons extends Component {
   render() {
     return (
         <div id='keypad'>
-            <button id='clear' style={{width:'160px'}}>
+            <button 
+                id='clear' 
+                style={{width:'160px'}}
+                onClick={this.props.initialize}>
                 <h3>AC</h3>
             </button>
             <button id='divide'>
@@ -20,43 +23,74 @@ export default class Buttons extends Component {
             <button id='multiply'>
                 <h3>x</h3>
             </button>
-            <button id='seven'>
+            <button 
+                id='seven'
+                onClick={this.props.numbers}
+                value='7'>
                 <h3>7</h3>
             </button>
-            <button id='eight'>
+            <button 
+                id='eight'
+                onClick={this.props.numbers}
+                value='8'>
                 <h3>8</h3>
             </button>
-            <button id='nine'>
+            <button 
+                id='nine'
+                onClick={this.props.numbers}
+                value='9'>
                 <h3>9</h3>
             </button>
             <button id='subtract'>
                 <h3>-</h3>
             </button>
-            <button id='four'>
+            <button 
+                id='four'
+                onClick={this.props.numbers}
+                value='4'>
                 <h3>4</h3>
             </button>
-            <button id='five'>
+            <button 
+                id='five'
+                onClick={this.props.numbers}
+                value='5'>
                 <h3>5</h3>
             </button>
-            <button id='six'>
+            <button 
+                id='six'
+                onClick={this.props.numbers}
+                value='6'>
                 <h3>6</h3>
             </button>
             <button id='add'>
                 <h3>+</h3>
             </button>
-            <button id='one'>
+            <button 
+                id='one'
+                onClick={this.props.numbers}
+                value='1'>
                 <h3>1</h3>
             </button>
-            <button id='two'>
+            <button 
+                id='two'
+                onClick={this.props.numbers}
+                value='2'>
                 <h3>2</h3>
             </button>
-            <button id='three'>
+            <button 
+                id='three'
+                onClick={this.props.numbers}
+                value='3'>
                 <h3>3</h3>
             </button>
             <button id='equals' style={{height:'130px'}}>
                 <h3>=</h3>
             </button>
-            <button id='zero' style={{width:'160px', position:'relative', bottom:'65px', right:'40px' }}>
+            <button 
+                id='zero' 
+                style={{width:'160px', position:'relative', bottom:'65px', right:'40px' }}
+                onClick={this.props.numbers}
+                value='0'>
                 <h3>0</h3>
             </button>
             <button id='decimal' style={{position:'relative', bottom:'65px', right:'40px' }}>
