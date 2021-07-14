@@ -17,10 +17,16 @@ export default class Buttons extends Component {
                 onClick={this.props.initialize}>
                 AC
             </button>
-            <button id='divide'>
+            <button 
+                id='divide'
+                onClick={this.props.operators}
+                value='/'>
                 /
             </button>
-            <button id='multiply'>
+            <button 
+                id='multiply'
+                onClick={this.props.operators}
+                value='x'>
                 x
             </button>
             <button 
@@ -41,7 +47,10 @@ export default class Buttons extends Component {
                 value='9'>
                 9
             </button>
-            <button id='subtract'>
+            <button 
+                id='subtract'
+                onClick={this.props.operators}
+                value='-'>
                 -
             </button>
             <button 
@@ -62,7 +71,10 @@ export default class Buttons extends Component {
                 value='6'>
                 6
             </button>
-            <button id='add'>
+            <button 
+                id='add'
+                onClick={this.props.operators}
+                value='+'>
                 +
             </button>
             <button 
@@ -83,7 +95,11 @@ export default class Buttons extends Component {
                 value='3'>
                 3
             </button>
-            <button id='equals' style={{height:'130px'}}>
+            <button 
+                id='equals' 
+                style={{height:'130px'}}
+                onClick={this.props.evaluate}
+                value='='>
                 =
             </button>
             <button 
@@ -93,7 +109,11 @@ export default class Buttons extends Component {
                 value='0'>
                 0
             </button>
-            <button id='decimal' style={{position:'relative', bottom:'65px', right:'40px' }}>
+            <button 
+                id='decimal' 
+                style={{position:'relative', bottom:'65px', right:'40px' }}
+                onClick={this.props.decimal}
+                value='.'>
                 .
             </button>
         </div>

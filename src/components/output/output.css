@@ -1,6 +1,9 @@
-#display-two {
+#display {
     height: 35px;
     color: white;
     text-align: -webkit-right;
     text-align: right;
+    margin-right: 5px;
+    font-size: 32px;
+    font-family: Cute Font;
 }

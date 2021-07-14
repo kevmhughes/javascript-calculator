@@ -1,0 +1,12 @@
+#formula {
+    height: 30px;
+    text-align: -webkit-right;
+    text-align: right;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+    color: orange;
+    font-size: 23px;
+    font-family: Cute Font;
+}
+

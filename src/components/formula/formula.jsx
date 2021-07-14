@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './display.css';
+import './formula.css';
 
-export default class Display extends Component {
+export default class Formula extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,8 +10,8 @@ export default class Display extends Component {
 
   render() {
     return (
-        <div id='display'>
-            {this.props.prevValue}
+        <div id='formula'>
+          {this.props.formula}
         </div>
     );
   }
