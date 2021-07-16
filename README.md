@@ -1,7 +1,7 @@
 # JavaScript Calculator
 
 ### What is it?
-A calculator built with JavaScript and React.
+A calculator built with JavaScript, and React.
 
 ### Objective:
 
