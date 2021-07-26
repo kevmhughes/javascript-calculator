@@ -42,7 +42,8 @@ class App extends Component {
         .replace(/‑/g, '-')
         .replace('--', '+0+0+0+0+0+0+');
       // eslint-disable-next-line no-eval
-      let answer = Math.round(1000000000000 * eval(expression)) / 1000000000000;
+      let answer = (Math.round(1000000000000 * eval(expression)) / 1000000000000);
+      console.log(answer)
       this.setState({
         currentVal: answer.toString(),
         formula:
